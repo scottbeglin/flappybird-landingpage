@@ -6,111 +6,104 @@
 }
 
 
-/* Setting the background image */
+/* General Style */
 
 body {
     font-family: 'Gloria Hallelujah', cursive, Helvetica, sans-serif;
-    background-image: url("../img/backpic.gif");
+}
+
+
+/* Setting the background image */
+
+.backgroundImage {
+    background: url("../img/backpic.jpg");
     background-size: cover;
-    background-position: top center;
     background-repeat: no-repeat;
     position: fixed;
+    z-index: -1;
     width: 100%;
     height: 100%;
 }
 
 
-/* General Style */
-
-ul li {
-    display: inline-block;
-    float: right;
-    margin-right: 3rem;
-    list-style: none;
-    color: darkgreen;
-}
-
-ul li a {
-    text-decoration: none;
-}
-
-
 /* Header styles */
 
-.navBar {
-    width: 85%;
+.title {
+    text-align: left;
+    padding-left: 4rem;
+    width: 100%;
+    font-size: 30px;
     color: orangered;
-}
-
-.navBar h1 {
-    float: left;
-    margin-left: 7rem;
-    font-size: 35px;
-    text-shadow: 2px 2px 7px #01DFA5;
+    text-shadow: 2px 2px 4px pink;
 }
 
 
 /* Wrapper container styles */
 
 .wrapper {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 10rem;
-    margin-bottom: 6rem;
-    padding: 1.5rem 3rem;
-}
-
-.wrapper .partOne {
-    float: left;
-}
-
-.wrapper .partTwo {
-    float: right;
-}
-
-.wrapper .partThree {
-    float: left;
-}
-
-.partTwo .tubePic {
-    padding-top: 5rem;
-    padding-right: 3rem;
-}
-
-.partThree .birdPic {
-    padding-left: 5rem;
-}
-
-.gameReady {
-    padding-top: 9rem;
-    text-align: center;
+    text-align: left;
+    margin-left: 3rem;
 }
 
 .flappyStory {
-    font-size: 20px;
+    color: darkslategray;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+.gameReady {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px pink;
 }
 
 .gameReady .playButton {
+    text-decoration: none;
     background-color: orangered;
-    padding: .5rem 3rem;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
     border-radius: 2rem;
 }
 
 
-/* Footer CSS */
+/*desktop first approach*/
 
-.social {
-    height: 3rem;
-    text-align: center;
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (max-width: 1024px) {
+    .title {
+        font-size: 25px;
+    }
+    .flappyStory {
+        font-size: 18px;
+    }
 }
 
-.social h3 {
-    color: #2E2EFE;
-    font-size: 1rem;
+
+/*ipad potrait*/
+
+@media only screen and (max-width: 768px) {
+    .flappyStory {
+        font-size: 16px;
+    }
 }
 
-.socialLinks li {
-    display: inline-block;
-    font-size: 1rem;
-    margin: 1rem 1rem;
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+    body {
+        color: green;
+    }
+}
+
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {
+    body {
+        color: purple;
+    }
 }
