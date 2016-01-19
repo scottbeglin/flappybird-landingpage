@@ -1,15 +1,116 @@
-body {
-    color: rebeccapurple;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
 }
 
 
-/* Sass Variables */
+/* Setting the background image */
+
+body {
+    font-family: 'Gloria Hallelujah', cursive, Helvetica, sans-serif;
+    background-image: url("../img/backpic.gif");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
 
 
 /* General Style */
 
+ul li {
+    display: inline-block;
+    float: right;
+    margin-right: 3rem;
+    list-style: none;
+    color: darkgreen;
+}
 
-/* Header Section */
+ul li a {
+    text-decoration: none;
+}
 
 
-/* Content Section */
+/* Header styles */
+
+.navBar {
+    width: 85%;
+    color: orangered;
+}
+
+.navBar h1 {
+    float: left;
+    margin-left: 7rem;
+    font-size: 35px;
+    text-shadow: 2px 2px 7px #01DFA5;
+}
+
+
+/* Wrapper container styles */
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+    padding: 1.5rem 3rem;
+}
+
+.wrapper .partOne {
+    float: left;
+}
+
+.wrapper .partTwo {
+    float: right;
+}
+
+.wrapper .partThree {
+    float: left;
+}
+
+.partTwo .tubePic {
+    padding-top: 5rem;
+    padding-right: 3rem;
+}
+
+.partThree .birdPic {
+    padding-left: 5rem;
+}
+
+.gameReady {
+    padding-top: 9rem;
+    text-align: center;
+}
+
+.flappyStory {
+    font-size: 20px;
+}
+
+.gameReady .playButton {
+    background-color: orangered;
+    padding: .5rem 3rem;
+    border-radius: 2rem;
+}
+
+
+/* Footer CSS */
+
+.social {
+    height: 3rem;
+    text-align: center;
+}
+
+.social h3 {
+    color: #2E2EFE;
+    font-size: 1rem;
+}
+
+.socialLinks li {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 1rem 1rem;
+}
