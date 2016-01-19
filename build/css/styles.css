@@ -459,10 +459,6 @@ body {
 /* Header Section */
 /* Content Section */
 
-/* CSS reset
-    (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -473,32 +469,76 @@ body {
 
 /* General Style */
 
-html {
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/backpic.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    font-family: 'Gloria Hallelujah', cursive, Helvetica, sans-serif;
 }
 
 
-/* Header Section */
+/* Setting the background image */
+
+.backgroundImage {
+    background: url("../img/backpic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
 
 
-/* Content Section */
+/* Header styles */
+
+.title {
+    text-align: left;
+    padding-left: 4rem;
+    width: 100%;
+    font-size: 30px;
+    color: orangered;
+    text-shadow: 2px 2px 4px pink;
+}
 
 
-/* media query is a set of conditions in which the code inside will be executed*/
+/* Wrapper container styles */
+
+.wrapper {
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.flappyStory {
+    color: darkslategray;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #fff;
+}
+
+.gameReady {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px pink;
+}
+
+.gameReady .playButton {
+    text-decoration: none;
+    background-color: orangered;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+}
 
 
-/* desktop first approach */
+/*desktop first approach*/
 
 
-/* ipad lanscape / small laptop */
+/*ipad lanscape / small laptop*/
 
 @media only screen and (max-width: 1024px) {
-    body {
-        color: blue;
+    .title {
+        font-size: 25px;
+    }
+    .flappyStory {
+        font-size: 18px;
     }
 }
 
@@ -506,8 +546,8 @@ html {
 /*ipad potrait*/
 
 @media only screen and (max-width: 768px) {
-    body {
-        color: red;
+    .flappyStory {
+        font-size: 16px;
     }
 }
 
